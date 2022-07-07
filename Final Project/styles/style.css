@@ -1,5 +1,5 @@
 .wrapper{
-    max-width: 1185px;
+    max-width: 90%;
     margin: 0 auto;
 }
 
@@ -143,6 +143,7 @@ a{
 }
 
 .icons_list{
+    margin-top: 280px;
     display: flex;
     justify-content: space-between;
 }
@@ -545,6 +546,12 @@ a{
   }
 
   .your-class{
-    width: 100%;
+    width: 90%;
     height: 500px;
+  }
+
+  .parallax-window {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
   }
