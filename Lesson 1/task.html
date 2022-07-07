@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!--    
+            Сумма в диапазоне
+		
+			Напишите 2 функции.
+			Первая функция генерирует массив на N рандомных чисел в диапазоне от A до B и возвращает его 
+			Т.е. принимает 3 параметра и А не может быть больше чем B
+			Например: doSmth(8, 1, 10) -> [3, 2, 5, 4, 7, 1, 3, 10]
+			
+			Вторая функция принимает массив рандомных чисел, индекс С которого начинать подсчет и индекс ПО который считать
+			Должна быть валидация индексов
+				- Чтобы не было отрицательных чисел
+				- Чтобы индекс не выходил за рамки допустимых индексов
+				- Чтобы первый индекс был меньше или равен второму
+			
+			Пример вывода в консоль:
+			Массив: [.....] сгенерированный от A до B
+			Сумма чисел в диапазоне от индекса C по индекс D равна: 10 
+        -->
+    <script>       
+
+                    // функция которая генерирует рандомное число - getRandomInt
+        // min - параметр для значения от которого необходимо генерировать число
+        // max - параметр для значени до которого необходимо генерировать число
+        // как результат возвращает рандомное число от min до max
+        function getRandomInt(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        // функция которая генерирует массив рандомных чисел - doSmth
+        // a - параметр для значения от которого необходимо генерировать число
+        // b - параметр для значения до которого необходимо генерировать число
+        // num - параметр который задает размер массива
+        // как результат возвращает массив рандомных чисел
+        function doSmth(a, b, num) {
+            // валидация параметров
+            if (a > b) {
+                alert("param a is bigger than b:");
+                return;
+            } 
+
+            // если валидация пройдена создаем пустой массив и запускаем цикл чтоб его заполнить
+            let arr = [];
+            for (var i = 0; i < num; i++) {
+                var randomInt = getRandomInt(a, b);
+                arr.push(randomInt);
+            }
+            return arr;            
+        }
+
+        // функция которая считает сумму чисел от заданных индексов в массиве - calculateSumBtwNumb
+        // c - параметр для индеса массива от которого начинать считать сумму
+        // d - параметр для индеса массива до которого необходимо считать сумму
+        // array - параметр для массив с рандомными значениями
+        // как результат возвращает сумму чисел в массиве от заданных параметров
+        function calculateSumBtwNumb(c, d, array) {
+            // валидация параметров на невалидное значение меньше 0
+            if (c < 0 || d < 0) {
+                alert("parametrs are less than 0, please, try again");
+                return;
+            }
+            
+            // валидация параметра d чтоб он не превышал максимально допустимый индекс в массиве
+            if (d >= array.length) {
+                alert("parametr d is out of array range, please, try again");
+                return;
+            }
+
+            // валидация параметров чтоб начальный индекс был не больше конечного индекса
+            if (c > d) {
+                alert("parametr c cant be bigger than d, please, try again");                
+                return;
+            }
+
+            // если валидация пройдена создаем переменную sum и запускаем цикл для подсчета неободимого значения
+            var sum = 0;
+            for (var i = c; i < d; i++) {
+                sum = sum + array[i];
+            }
+            
+            return sum;
+        }
+
+
+        // глобальная функция для запуска всего кода
+        function task() {
+            // вызов функции doSmth с аргументами для получения массива рандомных чисел
+            var targetArr = doSmth(1, 10, 5);
+
+            // валидируем targetArr есть ли в нем массив или undefined
+            if (targetArr === undefined ) {
+                alert('there no valid array, please, review doSmth call ');
+                return;
+            } 
+               
+            var result = calculateSumBtwNumb(0, 4, targetArr);
+
+            // валидируем calculateSumBtwNumb есть ли в нем число или undefined
+            if (result === undefined) {
+                alert('there no valid number, please, review calculateSumBtwNumb call ');
+                return;
+            } 
+
+            alert("сумма чисел равна: " + result);
+        }
+
+        task();
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,550 @@
+.wrapper{
+    max-width: 1185px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header svg{
+    margin-left: 10px;
+}
+
+.header li{
+    margin-right: 35px;
+}
+
+.header_menu{
+    display: flex;
+    padding-top: 4%;
+}
+
+.header_menu a{
+    font-family: 'Halyard Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 80px;
+    color: #1E266D;
+    align-items: flex-end;
+}
+
+.header_contacts{
+    display: flex;
+    font-family: 'Halyard Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 80px;
+    color: #1E266D;
+}
+
+.header_contacts button{
+    width: 113px;
+    height: 40px;
+    background-color: #3751FF;
+    border-radius: 100px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.active::after{
+    content: "\032C";
+    position: relative;
+    bottom: 30%;
+    right: 25%;
+    font-size: 40px;
+}
+
+.main_image{
+    height: 680px;
+    background: linear-gradient(180deg, rgba(242, 249, 255, 0.12) 0%, #F2F9FF 100%);
+    margin-top: 150px;
+}
+
+.main_image h1{
+    font-family: 'Halyard Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 105%;
+    color: #1E266D;
+    width: 45%;
+    margin: 0 auto;
+}
+
+.main_image p{
+    font-family: 'Halyard Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #455880;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.main_image ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.blue_btn{
+    width: 150px;
+    height: 50px;
+    border: 0px solid;
+    background-color: #3751FF;
+    border-radius: 100px;
+    color: #fff;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.white_btn{
+    width: 200px;
+    height: 50px;
+    border: 0px solid;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 100px;
+    color: #455880;
+    cursor: pointer;
+}
+
+.top_image{
+    margin-top: 40px;
+    width: 100%;
+    height: 560px;
+}
+
+.logos{
+    margin-top: 200px;
+}
+
+.logos p{
+    font-family: 'Halyard Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: center;
+    color: rgba(69, 88, 128, 0.5);
+    margin-bottom: 60px;
+}
+
+.icons_list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons_list li{
+    margin-bottom: 20px;
+}
+
+.work_to_do{
+    margin-top: 200px;
+}
+
+.work_to_do h1{
+    text-align: center;
+    font-family: 'Halyard Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
+    color: #1E266D;
+}
+
+.fotos_and_list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fotos_and_list img{
+    position: relative;
+    bottom: 80px;
+}
+
+.fotos_and_list ul{
+    margin-top: 80px;
+    width: 35%;
+}
+
+.fotos_and_list li:not(:last-child){
+    border-bottom: 1px solid rgba(69, 88, 128, 0.2);
+    height: 30%;
+}
+
+.fotos_and_list h2{
+    font-family: 'Halyard Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 125%;
+    color: #1E266D;
+    margin-top: 45px;
+    margin-bottom: 40px;
+}
+
+.fotos_and_list span{
+    font-family: 'Halyard Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #455880;
+}
+
+.first_mark::before{
+    content: url(../images/1.png);
+    position: relative;
+    right: 23%;
+    top: 110px;
+}
+
+.second_mark::before{
+    content: url(../images/2.png);
+    position: relative;
+    right: 23%;
+    top: 110px;
+}
+
+.third_mark::before{
+    content: url(../images/3.png);
+    position: relative;
+    right: 23%;
+    top: 110px;
+}
+
+.cream_font{
+    background-color: #FFF9EA;
+    text-align: center;
+}
+
+.cream_font h3{
+    font-family: 'Halyard Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
+    color: #1E266D;
+    padding-top: 150px;
+}
+
+.cream_font p{
+    padding-top: 50px;
+    font-family: 'Halyard Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 150%;
+    color: #455880;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.digits_btn{
+    width: 150px;
+    height: 50px;
+    background-color: #3751FF;
+    border-radius: 100px;
+    color: #fff;
+    border: none;
+    margin-top: 50px;
+}
+
+.cream_font img{
+    width: 100%;
+}
+
+.feedback_header{
+    margin-top: 250px;
+    font-family: 'Halyard Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    color: #1E266D;
+}
+
+.feedbacks{
+    display: flex;
+    justify-content: center;
+    margin: 70px 30px;
+}
+.feedbacks p{
+    font-family: 'Halyard Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+    color: #455880;
+}
+
+.feedbacks h4{
+    font-family: 'Halyard Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 125%;
+    color: #1E266D;
+}
+
+.left_user{
+    border: 1px solid rgba(69, 88, 128, 0.2);
+    border-radius: 4px;
+    width: 80%;
+    margin-right: 30px;
+    padding: 50px;
+}
+
+.middle_user{
+    border: 1px solid rgba(69, 88, 128, 0.2);
+    border-radius: 4px;
+    width: 80%;
+    margin-right: 30px;
+    padding: 50px;
+}
+
+.right_user{
+    border: 1px solid rgba(69, 88, 128, 0.2);
+    border-radius: 4px;
+    width: 80%;
+    padding: 50px;
+}
+
+.feedbacks img{
+    display: block;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.feedbacks h4{
+    text-align: center;
+}
+
+.tempy{
+    display: block;
+    text-align: center;
+}
+
+.blue_background{
+    background-color: #3751FF;
+    height: 325px;
+}
+
+.background_content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.background_content h5{
+    font-family: 'Halyard Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
+    color: #FFFFFF;
+    width: 40%;
+    margin-top: 8%;
+    margin-left: 2%;
+}
+
+.choice{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-top: 10%;
+}
+
+.choice button{
+    width: 245px;
+    height: 56px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.choice p{
+    font-family: 'Halyard Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 110%;
+    color: #455880;
+}
+
+.choice span{
+    font-family: 'Halyard Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    color: #DFE0EB;
+    margin-top: 20px;
+}
+
+.footer_lists{
+    display: flex;
+    justify-content: space-between;
+    padding: 130px 30px;
+    font-family: 'Halyard Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 145%;
+    color: #455880;
+}
+
+.footer_lists li{
+    margin-bottom: 30px;
+}
+
+.information{
+    width: 30%;
+}
+
+.links{
+    width: 20%;
+}
+
+.social_links{
+    display: flex;
+}
+
+.social_links li{
+    margin-right: 25px;
+}
+
+.links a:hover{
+    text-decoration: underline;
+}
+
+.links li:first-child{
+    font-family: 'Halyard Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 125%;
+    color: #1E266D;
+}
+
+.copyright{
+    height: 200px;
+}
+
+.copyright p{
+    font-family: 'Halyard Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+    color: rgba(69, 88, 128, 0.5);
+    margin-left: 10px;
+}
+.footer_links{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer_links li{
+    margin-right: 25px;
+}
+
+/* modal button */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal_form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal_form input{
+    margin-bottom: 10px;
+  }
+
+  #submit-btn{
+    width: 70px;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  #ToTheTop {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #1E266D; 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 18px; 
+  }
+  
+  #ToTheTop:hover {
+    background-color: #555;
+  }
+
+  .your-class{
+    width: 100%;
+    height: 500px;
+  }
